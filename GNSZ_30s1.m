@@ -14,7 +14,7 @@ for i=1:length(cases)
               T0=T{j,2};
               T1=fs*T0;
               x=30*fs;
-             Y=EEG.mydata(:,T1-x:T1-1);
+             Y=EEG.data(:,T1-x:T1-1);
     end%a è la struttura %b è la matrice canalixcampioni %tempo di start seizure %x sono i 30 secondi
         save(strcat(outDir,(strtok(cases(i).name,'.')),'30.mat'),'Y')
    end
