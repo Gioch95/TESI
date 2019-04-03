@@ -26,6 +26,6 @@ GN(1,:)=[];
 matrix=[FN;GN];
         
 filenameepoche=strcat(outDirepoche,'_Jamovi');
-save(strcat(filenameepoche,'Epoche'),'matrix')
+save(strcat(filenameepoche,'PSDspaziale'),'matrix')
 
 end
