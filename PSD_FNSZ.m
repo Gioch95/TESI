@@ -1,9 +1,9 @@
-function [pxx,f,B]=PSDFNSZ(Y,B,fs)
+function [pxx,f,B]=PSDFNSZ(Y,B)
 load('B')
 
 %matrice 3 dimensioni con zeros
 inDir='C:\Users\gioiachiodi\Documents\MATLAB\FNSZ 30 secondi\';%segnale non filtrato
-outDir='C:\Users\gioiachiodi\Documents\MATLAB\FNSZPSD\';%qui ho inserito un \ in più
+outDir='C:\Users\gioiachiodi\Documents\MATLAB\FNSZPSD\';%qui ho inserito un \ in piÃ¹
 fs=250;
 estensione='*.mat';
 cases=dir(fullfile(inDir,estensione));
