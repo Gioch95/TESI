@@ -1,5 +1,5 @@
-function C=mediaglobaletotale(B)
-chan=19;%19 canali
+function C=FNSZ_psdmedia(B)
+chan=17;%19 canali
 epoch=6;%da 5 secondi
 bande=5;%delta,gamma,beta,alpha,theta
 inDirFNSZ='C:\Users\gioiachiodi\Documents\MATLAB\FNSZPSD\';
