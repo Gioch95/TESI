@@ -1,8 +1,8 @@
-function matrix=JamoviPSDglobale(bande,fs,PSDmediaFNSZ,PSDmediaGNSZ)
-chan=19;%19 canali
+function matrix=JamoviPSDglobale(bande,PSDmediaFNSZ,PSDmediaGNSZ)
+chan=17;%19 canali
 epoch=6;%da 5 secondi
 bande=5;%delta,gamma,beta,alpha,theta
-%qui ho inserito un \ in più
+%qui ho inserito un \ in piÃ¹
 fs=250;
 estensione='*.mat';
 
