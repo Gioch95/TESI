@@ -11,7 +11,7 @@ estensione='*.mat';
 GN=FN;
 inDirFNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDmediaFNSZ\';
 inDirGNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDmediaGNSZ\';
-outDirbande='C:\Users\gioiachiodi\Documents\MATLAB\Bande\';
+outDirbande='C:\Users\gioiachiodi\Documents\MATLAB\PSDglobale\';
 cases1=dir(fullfile(inDirFNSZ,estensione));
 cases2=dir(fullfile(inDirGNSZ,estensione))
 for i=1:length(cases1)
@@ -26,5 +26,5 @@ FN(1,:)=[];
 GN(1,:)=[];
 matrix=[FN;GN];
 filenamebande=strcat(outDirbande,'_Jamovi');
-save(strcat(filenamebande,'MediaBande'),'matrix')
+save(strcat(filenamebande,'PSDglobale'),'matrix')
 end
