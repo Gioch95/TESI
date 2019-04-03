@@ -1,4 +1,4 @@
-function Y=seizurestime30(T,fs)
+function Y=GNSZ_30s(filename)
 load('T.mat');
 inDir='C:\Users\gioiachiodi\Documents\MATLAB\GNSZ\';
 outDir='C:\Users\gioiachiodi\Documents\MATLAB\GNSZ 30 secondi\';%qui ho inserito un \ in più
