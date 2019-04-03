@@ -1,17 +1,16 @@
 function EEGOUT=filterGNSZ(Y)
 
-inDir='C:\Users\gioiachiodi\Documents\MATLAB\GNSZ 30 secondi\';
-outDir='C:\Users\gioiachiodi\Documents\MATLAB\GNSZFilter\';%qui ho inserito un \ in più
+inDir='C:\Users\gioiachiodi\Documents\MATLAB\GNSZ\';
+outDir='C:\Users\gioiachiodi\Documents\MATLAB\GNSZFilter\';%qui ho inserito un \ in piÃ¹
 fs=250;
 
 estensione='*.mat';
 cases=dir(fullfile(inDir,estensione));
 for i=1:length(cases)
      load(strcat(inDir,cases(i).name));
-     EEG.mydata=Y;
-     locutoff= 1;
-     hicutoff= 40;
-    EEGOUT = eegfilt( EEG.mydata, fs, locutoff, hicutoff);
-save(strcat(outDir,(strtok(cases(i).name,'.')),'filt.mat'),'EEGOUT')
+      filtorder=3*fix(fs/30);
+    EEG = pop_eegfilt( EEG,1,30,filtorder,0,[],1);
+     pop_eegplot( EEG, 1, 1, 1);
+save(strcat(outDir,(strtok(cases(i).name,'.')),'filt.mat'),'EEG')
 
 end
