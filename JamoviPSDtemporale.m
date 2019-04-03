@@ -1,4 +1,4 @@
-function matrix=JamoviPSDtemporale(chan,PSDchanFNSZ,PSDchanGNSZ)
+function matrix=JamoviPSDtemporale(chan,PSDepochFNSZ,PSDepochGNSZ)
 chan=17;%19 canali
 epoch=6;%da 5 secondi
 bande=5;%delta,gamma,beta,alpha,theta
@@ -8,8 +8,8 @@ estensione='*.mat';
 %CHAN
 FN=zeros(1,chan*bande+1);
 GN=FN;
-inDirFNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDchanFNSZ\';
-inDirGNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDchanGNSZ\';
+inDirFNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDepochFNSZ\';
+inDirGNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDepochGNSZ\';
 outDirchan='C:\Users\gioiachiodi\Documents\MATLAB\PSDtemporale\';
 
 cases1=dir(fullfile(inDirFNSZ,estensione));
@@ -26,7 +26,7 @@ FN(1,:)=[];
 GN(1,:)=[];
 matrix=[FN;GN];
 filenamechan=strcat(outDirchan,'_Jamovi');
-save(strcat(filenamechan,'Chan'),'matrix')
+save(strcat(filenamechan,'PSDtemporale'),'matrix')
 
 end
 %globale 5 colonne
