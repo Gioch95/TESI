@@ -1,4 +1,4 @@
-function matrix=JamoviPSDspaziale(epoch,PSDepochFNSZ,PSDepochGNSZ)
+function matrix=JamoviPSDspaziale(epoch,PSDchanFNSZ,PSDchanGNSZ)
 chan=17;%19 canali
 epoch=6;%da 5 secondi
 bande=5;%delta,gamma,beta,alpha,theta
@@ -8,8 +8,8 @@ estensione='*.mat';
 %EPOCHE
         FN=zeros(1,epoch*bande+1);
 GN=FN;
-inDirFNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDepochFNSZ\';
-inDirGNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDepochGNSZ\';
+inDirFNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDchanFNSZ\';
+inDirGNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDchanGNSZ\';
 outDirepoche='C:\Users\gioiachiodi\Documents\MATLAB\PSDspaziale\';
 cases1=dir(fullfile(inDirFNSZ,estensione));
 cases2=dir(fullfile(inDirGNSZ,estensione))
