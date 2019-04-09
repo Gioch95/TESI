@@ -1,5 +1,5 @@
 function C=GNSZ_psdmedia(B)
-chan=17;%19 canali
+chan=17;%17 canali
 epoch=6;%da 5 secondi
 bande=5;%delta,gamma,beta,alpha,theta
 
