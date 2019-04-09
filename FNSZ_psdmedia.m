@@ -21,14 +21,7 @@ PSDmedia=zeros(1,bande);
 PSDepochtot=0;
 PSDchantot=0;
 PSDmediatotale=0;
-for j=1:2
-    switch j
-        case 1
-            type='FN';
-        case 2
-            type='GN';
-    
-end
+
 for i=1:Lungh
 load(strcat(inDirFNSZ,cases1(i).name));
 PSDepoch=squeeze(sum(B,1))/epoch;%media delle epoche diviso il totale delle epoche
