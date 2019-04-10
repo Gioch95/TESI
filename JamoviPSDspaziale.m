@@ -2,7 +2,7 @@ function matrix=JamoviPSDspaziale(type)
 chan=17;%17 canali
 epoch=6;%da 5 secondi
 bande=5;%delta,gamma,beta,alpha,theta
-%qui ho inserito un \ in più
+%qui ho inserito un \ in piÃ¹
 fs=250;
 estensione='*.mat';
 %CHAN
@@ -10,7 +10,7 @@ FN=zeros(1,epoch*bande+1);
 GN=FN;
 inDirFNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDspazialeFNSZ\';
 inDirGNSZ='C:\Users\gioiachiodi\Documents\MATLAB\PSDspazialeGNSZ\';
-outDirchan='C:\Users\gioiachiodi\Documents\MATLAB\PSDspaziale\';
+outDirspz='C:\Users\gioiachiodi\Documents\MATLAB\PSDspaziale\';
 
 cases1=dir(fullfile(inDirFNSZ,estensione));
 cases2=dir(fullfile(inDirGNSZ,estensione))
@@ -25,7 +25,7 @@ end
 FN(1,:)=[];
 GN(1,:)=[];
 matrix=[FN;GN];
-filenamechan=strcat(outDirchan,'_Jamovi');
+filenamespz=strcat(outDirchan,'_Jamovi');
 save(strcat(filenamechan,'PSDspaziale'),'matrix')
 
 end
