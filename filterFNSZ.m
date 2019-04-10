@@ -1,4 +1,4 @@
-function EEGOUT=filterFNSZ(Y)
+function EEG=filterFNSZ(Y)
 
 inDir='C:\Users\gioiachiodi\Documents\MATLAB\FNSZ\';
 outDir='C:\Users\gioiachiodi\Documents\MATLAB\FNSZFilter\';%qui ho inserito un \ in più
