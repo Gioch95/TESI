@@ -1,4 +1,4 @@
-function EEGOUT=filterGNSZ(Y)
+function EEG=filterGNSZ(Y)
 
 inDir='C:\Users\gioiachiodi\Documents\MATLAB\GNSZ\';
 outDir='C:\Users\gioiachiodi\Documents\MATLAB\GNSZFilter\';%qui ho inserito un \ in più
