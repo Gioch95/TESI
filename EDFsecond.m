@@ -23,7 +23,7 @@ for i=1:length(cases)
               y=30*fs;
              EEG.data=EEG.data(:,T1-y:T1-1);
          EEG.chanlocs=x;
-        end%a è la struttura %b è la matrice canalixcampioni %tempo di start seizure %x sono i 30 secondi
+        end%a Ã¨ la struttura %b Ã¨ la matrice canalixcampioni %tempo di start seizure %x sono i 30 secondi
         pop_writeeeg(EEG,strcat(inDir,cases(i).name),'TYPE','EDF');
     %filename = strcat(outDir,(strtok(cases(i).name,'.')),'fnsz30s');
         %filename = strcat(outDir,(strtok(cases(i).name,'.')),'gnsz30s');
