@@ -31,8 +31,8 @@ end
 
 % Here, we collect the EEG data (one folder per group)
 nGroups = 2;
-GroupDirArray{1}= 'C:\Users\gioiachiodi\Documents\MATLAB\FNSZedf30s\';
-GroupDirArray{2}= 'C:\Users\gioiachiodi\Documents\MATLAB\GNSZedf30s\';
+GroupDirArray{1}= 'C:\Users\gioiachiodi\Documents\MATLAB\FNSZedf\';
+GroupDirArray{2}= 'C:\Users\gioiachiodi\Documents\MATLAB\GNSZedf\';
 
 %for Group = 1:nGroups
     %GroupDirArray{Group} = uigetdir([],sprintf('Path to the data of group %i (Vision Analyzer data)',Group)); %#ok<SAGROW>
