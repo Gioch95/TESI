@@ -1,3 +1,4 @@
+%%Apertura del Database
 inDir='C:\Users\gioiachiodi\Desktop\Tesi\v1.2.1\edf\dev_test\01_tcp_ar\065\00006546';
 %inDir='C:\Users\gioiachiodi\Desktop\Tesi\v1.2.1\edf\dev_test\03_tcp_ar_a\065\00006546';
 outDir='C:\Users\gioiachiodi\Documents\MATLAB\FNSZ\';%cartella degli FNSZ
